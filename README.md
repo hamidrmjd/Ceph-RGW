@@ -1,1 +1,3 @@
 # Ceph-RGW
+We have a Ceph Cluster which it's goal is to use for Object Storage via RGW (Rados Gateway). Cluster is consists of 20 Gen10 DL380 HP server which each server containes 8x 20TB SAS 10K and 4x 4TB PM 1643 SAMSUNG.
+Total HDDs pool capacity is 3.2 PB and 80 TB of SSDs. Each server, contains 1x25G Mullanux FLR card and 1x25G Mellanux PCIe4 card. Core Switches are embeded 2x Cisco 9k Switches and vPC completely considered. For benchmarking cluster we used Gosbench tool (thanks to https://github.com/mulbc/gosbench.git). HDD and SSD pools creates by default configurations for first try and results was like bellow:
